@@ -19,7 +19,7 @@ pfServer.use('/uploads',express.static('./uploads'))
 //use router
 pfServer.use(router)
 
-const PORT = 3000
+const PORT = 3000 || process.env.PORT
 
 // to host pfserver : localhost:3000
 pfServer.listen(PORT,()=>{
